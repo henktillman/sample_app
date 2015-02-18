@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  get 'ccsf_rails/index'
+
+  get 'ccsf_rails/links'
+
+  get 'ccsf_rails/about'
+
   get 'static_pages/home'
 
   get 'static_pages/help'
@@ -9,7 +15,7 @@ Rails.application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  root 'static_pages#home'
+  root 'ccsf_rails#index'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
