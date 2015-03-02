@@ -1,3 +1,20 @@
 // Place all the styles related to the StaticPages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+$background-color: #153649;
+$sans-serif: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$serif: "Electra", "Times New Roman", serif;
+$text-color: #FFFFFF;
+$link-color: #65AD3A;
+
+body { 
+  background-color: $background-color; 
+  color: $text-color;
+  font-family: $sans-serif;
+}
+a {
+  color: $link-color;
+}
+.page-title {
+  color: #D3D3D3;
+}

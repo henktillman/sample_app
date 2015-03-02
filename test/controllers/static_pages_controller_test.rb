@@ -3,7 +3,7 @@ require 'test_helper'
 class StaticPagesControllerTest < ActionController::TestCase
   
   def setup
-    @base_title = "Ruby on Rails Tutorial Sample App"
+    @base_title = "CS 232 Ruby on Rails Development"
   end
   
   test "should get home" do
@@ -28,4 +28,7 @@ class StaticPagesControllerTest < ActionController::TestCase
     get :contact
     assert_response :success
     assert_select "title", "Contact | #{@base_title}"
+    assert_select "h1.page-title", {:count=>1}
+    assert_select "body", {:text=>/contact/}
+  end
 end
