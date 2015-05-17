@@ -31,3 +31,10 @@ following = users[2..50]
 followers = users[3..40]
 following.each { |followed| user.follow(followed) }
 followers.each { |follower| follower.follow(user) }
+
+User.create!(name:  "Some Dude",
+           email: "dputnam@ccsf.edu",
+           password:              "t0pS3cret!",
+           password_confirmation: "t0pS3cret!",
+           activated: true,
+           activated_at: Time.zone.now)
