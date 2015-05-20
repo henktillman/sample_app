@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  get 'final_exam_controller/hello_world'
+
+  get 'static_pages/index'
+
+  get 'static_pages/help'
+
   get 'password_resets/new'
 
   get 'password_resets/edit'
